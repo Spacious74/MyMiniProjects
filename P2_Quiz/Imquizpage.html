@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizapp.com/Quizpage</title>
+    <link rel="stylesheet" href="./Quizapp.css">
+</head>
+
+<body style="display: flex; justify-content: space-evenly; align-items: flex-start;">
+
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xaobispx.json" background="transparent" speed="1"
+        style="width: 600px; height: 600px;" loop autoplay class="icon" id="iconanimation"></lottie-player>
+    <div id="loadtext">Making your result ...</div>
+    <div class="offanimation" id="offanimate"></div>
+
+
+    <div class="quiz" id="questionpage">
+
+        <div class="cardcontainer" id="que1">
+            <div class="question">
+                <span class="imq">Question 1.</span> Who is the Chief Minister of Maharashtra ?
+            </div>
+            <div class="answercontainer">
+                <div class="option">
+                    <input type="radio" name="answer1" id="a11" class="radiobtn">
+                    <label for="a11" class="answer_option" id="c11">Eknath Shindhey</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer1" id="a12" class="radiobtn">
+                    <label for="a12" class="answer_option">Udhav Thakrey</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer1" id="a13" class="radiobtn">
+                    <label for="a13" class="answer_option">Joytiraj Sindhia</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer1" id="a14" class="radiobtn">
+                    <label for="a14" class="answer_option">Bipin Rawat</label>
+                </div>
+                <button class="clear" onclick="checkfun(1)" id="btn1">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que2">
+            <div class="question">
+                <span class="imq">Question 2.</span> Gandhiji started 'Dandi March' to launch which movement ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer2" id="a21" class="radiobtn"> <label for="a21"
+                        class="answer_option" id="c21">Civil disobedience movement </label> </div>
+                <div class="option"> <input type="radio" name="answer2" id="a22" class="radiobtn"> <label for="a22"
+                        class="answer_option">Non-cooperation movement</label> </div>
+                <div class="option"> <input type="radio" name="answer2" id="a23" class="radiobtn"> <label for="a23"
+                        class="answer_option">Swadeshi movement</label> </div>
+                <div class="option"> <input type="radio" name="answer2" id="a24" class="radiobtn"> <label for="a24"
+                        class="answer_option">Quit India movement</label> </div>
+                <button class="clear" onclick="checkfun(2)" id="btn2">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que3">
+            <div class="question">
+                <span class="imq">Question 3.</span> What does the study of Universe of called ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer3" id="a31" class="radiobtn"> <label for="a31"
+                        class="answer_option">Astrophysics</label> </div>
+                <div class="option"> <input type="radio" name="answer3" id="a32" class="radiobtn"> <label for="a32"
+                        class="answer_option" id="c32">Cosmology</label> </div>
+                <div class="option"> <input type="radio" name="answer3" id="a33" class="radiobtn"> <label for="a33"
+                        class="answer_option">Cosmography</label> </div>
+                <div class="option"> <input type="radio" name="answer3" id="a34" class="radiobtn"> <label for="a34"
+                        class="answer_option">Geophysics</label> </div>
+                <button class="clear" onclick="checkfun(3)" id="btn3">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que4">
+            <div class="question">
+                <span class="imq">Question 4.</span> Which among the following is the highest peak of India ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer4" id="a41" class="radiobtn"> <label for="a41"
+                        class="answer_option">Nanda Devi</label> </div>
+                <div class="option"> <input type="radio" name="answer4" id="a42" class="radiobtn"> <label for="a42"
+                        class="answer_option">Kanchenjunga</label> </div>
+                <div class="option"> <input type="radio" name="answer4" id="a43" class="radiobtn"> <label for="a43"
+                        class="answer_option" id="c43">Mount K2</label> </div>
+                <div class="option"> <input type="radio" name="answer4" id="a44" class="radiobtn"> <label for="a44"
+                        class="answer_option">Anaimudi</label> </div>
+                <button class="clear" onclick="checkfun(4)" id="btn4">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que5">
+            <div class="question">
+                <span class="imq">Question 5.</span> Golden fibres refers to which crop ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer5" id="a51" class="radiobtn"> <label for="a51"
+                        class="answer_option">Hemp</label> </div>
+                <div class="option"> <input type="radio" name="answer5" id="a52" class="radiobtn"> <label for="a52"
+                        class="answer_option">Cotton</label> </div>
+                <div class="option"> <input type="radio" name="answer5" id="a53" class="radiobtn"> <label for="a53"
+                        class="answer_option" id="c53">Jute</label> </div>
+                <div class="option"> <input type="radio" name="answer5" id="a54" class="radiobtn"> <label for="a54"
+                        class="answer_option">Nylon</label> </div>
+                <button class="clear" onclick="checkfun(5)" id="btn5">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que6">
+            <div class="question">
+                <span class="imq">Question 6.</span> The Constitution of India was framed by ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer6" id="a61" class="radiobtn"> <label for="a61"
+                        class="answer_option">Working Committee</label> </div>
+                <div class="option"> <input type="radio" name="answer6" id="a62" class="radiobtn"> <label for="a62"
+                        class="answer_option">President</label> </div>
+                <div class="option"> <input type="radio" name="answer6" id="a63" class="radiobtn"> <label for="a63"
+                        class="answer_option">Planning Commission</label> </div>
+                <div class="option"> <input type="radio" name="answer6" id="a64" class="radiobtn"> <label for="a64"
+                        class="answer_option" id="c64">Constituent Assembly</label> </div>
+                <button class="clear" onclick="checkfun(6)" id="btn6">Clear Response</button>
+            </div>
+        </div>
+
+        <div class="cardcontainer" id="que7">
+            <div class="question">
+                <span class="imq">Question 7.</span> Mission Indradhanush is related to ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer7" id="a71" class="radiobtn"> <label for="a71"
+                        class="answer_option">Children Safety</label> </div>
+                <div class="option"> <input type="radio" name="answer7" id="a72" class="radiobtn"> <label for="a72"
+                        class="answer_option">E-commerce</label> </div>
+                <div class="option"> <input type="radio" name="answer7" id="a73" class="radiobtn"> <label for="a73"
+                        class="answer_option" id="c73">Child Vaccination</label> </div>
+                <div class="option"> <input type="radio" name="answer7" id="a74" class="radiobtn"> <label for="a74"
+                        class="answer_option">None of these</label> </div>
+                <button class="clear" onclick="checkfun(7)" id="btn7">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que8">
+            <div class="question">
+                <span class="imq">Question 8.</span> Which was the first successful mission to land on the surface of
+                Mars ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer8" id="a81" class="radiobtn"> <label for="a81"
+                        class="answer_option" id="c81">Viking 1</label> </div>
+                <div class="option"> <input type="radio" name="answer8" id="a82" class="radiobtn"> <label for="a82"
+                        class="answer_option">Mars 3</label> </div>
+                <div class="option"> <input type="radio" name="answer8" id="a83" class="radiobtn"> <label for="a83"
+                        class="answer_option">Curiosity Rover</label> </div>
+                <div class="option"> <input type="radio" name="answer8" id="a84" class="radiobtn"> <label for="a84"
+                        class="answer_option">Pathfinder</label> </div>
+                <button class="clear" onclick="checkfun(8)" id="btn8">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que9">
+            <div class="question">
+                <span class="imq">Question 9.</span> Yen is the currency of ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer9" id="a91" class="radiobtn"> <label for="a91"
+                        class="answer_option">Germany</label> </div>
+                <div class="option"> <input type="radio" name="answer9" id="a92" class="radiobtn"> <label for="a92"
+                        class="answer_option">France</label> </div>
+                <div class="option"> <input type="radio" name="answer9" id="a93" class="radiobtn"> <label for="a93"
+                        class="answer_option" id="c93">Japan</label> </div>
+                <div class="option"> <input type="radio" name="answer9" id="a94" class="radiobtn"> <label for="a94"
+                        class="answer_option">South Korea</label> </div>
+                <button class="clear" onclick="checkfun(9)" id="btn9">Clear Response</button>
+            </div>
+        </div>
+        <div class="cardcontainer" id="que10" style="margin-bottom: 20px;">
+            <div class="question">
+                <span class="imq">Question 10.</span> The term 'Smash' is related to ?
+            </div>
+            <div class="answercontainer">
+                <div class="option"> <input type="radio" name="answer10" id="a101" class="radiobtn"> <label for="a101"
+                        class="answer_option" id="c101">Table Tennis</label> </div>
+                <div class="option"> <input type="radio" name="answer10" id="a102" class="radiobtn"> <label for="a102"
+                        class="answer_option">Lawn Tennis</label> </div>
+                <div class="option"> <input type="radio" name="answer10" id="a103" class="radiobtn"> <label for="a103"
+                        class="answer_option">Volleyball</label> </div>
+                <div class="option"> <input type="radio" name="answer10" id="a104" class="radiobtn"> <label for="a104"
+                        class="answer_option">Billiards</label> </div>
+                <button class="clear" onclick="checkfun(10)" id="btn10">Clear Response</button>
+            </div>
+        </div>
+        <div class="twobtns">
+
+            <input type="submit" value="Submit" class="submit" id="submitresultbtn" onclick="resultanimate()">
+        </div>
+    </div>
+
+
+
+    <div class="quizinfocontainer" id="sidepage">
+
+        <div class="quizinfo">
+            <div class="headofquizinfo">
+                <button class="back">
+                    <a href="./Quizapp.html"> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAe0lEQVQ4je3SoQ3CUBCA4a8EhalA0xkqqSXBdQM0y7BH9yCdgQmwtRhIGjCQJiQY7ok26e/OfLnLe8xNoiOaVNgBPdoUWI0HLlhHsQo3XLGJQBlKnJG/we5P64nTIrLNDxRsDScXqfQ97hI9yqfwt1l+zQ1W2AWWmhtbL9/CFDUf3/EAAAAAAElFTkSuQmCC" class="backicon">Back to home</a>
+                </button>Result
+            </div>
+
+            <div class="box">
+                <div class="resultcard" id="result">
+                    hello this is result
+                </div>
+                <span class="small">* Each question carries 3 marks.</span>
+            </div>
+
+            <div class="headofquestion">Status</div>
+            <div class="box">
+                <div class="questionstatus" id="totalquestion">
+                    <a href="#que1"><span class="number">1</span> </a>
+                    <a href="#que2"><span class="number">2</span> </a>
+                    <a href="#que3"><span class="number">3</span> </a>
+                    <a href="#que4"><span class="number">4</span> </a>
+                    <a href="#que5"><span class="number">5</span> </a>
+                    <a href="#que6"><span class="number">6</span> </a>
+                    <a href="#que7"><span class="number">7</span> </a>
+                    <a href="#que8"><span class="number">8</span> </a>
+                    <a href="#que9"><span class="number">9</span> </a>
+                    <a href="#que10"><span class="number">10</span> </a>
+                </div>
+                <span class="small">* You can directly jump to any question by
+                    clicking the number.</span>
+            </div>
+            <div class="basicinfo">
+
+                <div class="headofquestion">About Notation</div>
+                <div class="box">
+                    <div class="oneline">
+                        <div class="circle onec"></div>
+                        <span class="text"> Correct Answer.</span>
+                    </div>
+                    <div class="oneline">
+                        <div class="circle twoc"></div>
+                        <span class="text"> Unattempted question.</span>
+                    </div>
+                    <div class="oneline">
+                        <div class="circle threec"></div>
+                        <span class="text"> Wrong Answer.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./Quizapp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cacaca;
+}
+#clock{
+    font-size: 5rem;
+    font-family: Product Sans;
+    display: flex;
+    background-color: black;
+    color: rgb(0, 189, 0);
+    align-items: center;
+    height: 100px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 7px grey;
+    justify-content: space-evenly;
+}
+.time{
+    width: 120px;
+    text-align: center;
+}
+#sesion{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    height: 65px;
+    width: auto;
+}

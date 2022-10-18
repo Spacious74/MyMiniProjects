@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+}
+body{
+    background-color: rgb(205, 215, 226);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.name{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 3rem;
+    font-family: Sacramento;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    background-color: rgb(230, 231, 233);
+    width: 290px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 0px rgb(146, 160, 177),
+    0px 10px 30px rgb(155, 180, 201),
+    4px 4px 10px rgb(169, 169, 185);
+}
+.fourbtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.btn{
+    background-color:rgb(241, 241, 241);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border: none;
+}
+.outputscreen{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding: 0px 15px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0px 2px 2px rgb(141, 170, 204);
+    color: rgb(53, 66, 102);
+    text-align:right;
+    outline: none;
+}
+.clear{
+    background-color: rgb(241, 211, 211);
+    border: none;
+    box-shadow: 0px 2px 2px rgb(192, 161, 161);
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(167, 52, 52);
+    font-weight: bold;
+    width: 47%;
+}
+.clear:hover{
+    background-color: rgb(238, 178, 178);
+}
+.clear:active{
+    box-shadow: none;
+    transform: translateY(0.5px);
+}
+.delete{
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 47%;
+    background-color: rgb(189, 193, 216);
+    color: rgb(33, 34, 46);
+    box-shadow: 0px 2px 2px rgb(161, 163, 192);
+}
+.delete:hover{
+    background-color: rgb(162, 168, 202);
+}
+.delete:active{
+    box-shadow: none;
+    transform: translateY(0.5px);
+}
+.no{
+    background-color: rgb(210, 190, 233);
+    box-shadow: 0px 2px 2px rgba(95, 0, 95, 0.308);
+    color: rgb(84, 1, 95);
+    font-weight: bold;
+}
+.no:hover{
+    background-color: rgb(178, 149, 212);
+}
+.no:active{
+    transform: translateY(0.3px);
+    box-shadow: none;
+}
+.sign{
+    background-color: rgb(177, 209, 177);
+    box-shadow: 0px 2px 2px rgba(1, 95, 14, 0.411);
+    color: rgb(6, 78, 6);
+}
+.sign:hover{
+    background-color: rgb(131, 173, 131);
+}
+.sign:active{
+    transform: translateY(0.3px);
+    box-shadow: none;
+}
+.equal{
+    background-color: rgb(141, 170, 204);
+    box-shadow: 0px 2px 2px rgb(118, 153, 192);
+    color: rgb(0, 0, 77);
+}
+.equal:hover{
+    background-color: rgb(108, 139, 175);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator.com</title>
+    <link rel="stylesheet" href="./Calculator.css">
+    <script src="https://kit.fontawesome.com/3d8295fecd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <div class="name">- spacious</div>
+    <div class="container">
+        <input type="text" class="outputscreen" id="oscreen" disabled>
+        <div class="buttons">
+            <button class="clear" onclick="clearScreen()">Clear</button>
+            <button class="delete" onclick="clearWord()">Delete</button>
+        </div>
+        <div class="inputscreen">
+            <div class="fourbtns">
+                <input type="button" value="1" class="btn no" onclick="display('1')">
+                <input type="button" value="2" class="btn no" onclick="display('2')">
+                <input type="button" value="3" class="btn no" onclick="display('3')">
+                <input type="button" value="×" class="btn sign" onclick="display('×')">
+            </div>
+            <div class="fourbtns">
+                <input type="button" value="4" class="btn no" onclick="display('4')">
+                <input type="button" value="5" class="btn no" onclick="display('5')">
+                <input type="button" value="6" class="btn no" onclick="display('6')">
+                <input type="button" value="÷" class="btn sign" onclick="display('÷')">
+            </div>
+            <div class="fourbtns">
+                <input type="button" value="7" class="btn no" onclick="display('7')">
+                <input type="button" value="8" class="btn no" onclick="display('8')">
+                <input type="button" value="9" class="btn no" onclick="display('9')">
+                <input type="button" value="-" class="btn sign" onclick="display('-')">
+            </div>
+            <div class="fourbtns">
+                <input type="button" value="." class="btn no" onclick="display('.')">
+                <input type="button" value="0" class="btn no" onclick="display('0')">
+                <input type="button" value="=" class="btn sign equal" onclick="calculate()">
+                <input type="button" value="+" class="btn sign" onclick="display('+')">
+            </div>
+        </div>
+    </div>
+    <script src="./Calculator.js"></script>
+</body>
+
+</html>

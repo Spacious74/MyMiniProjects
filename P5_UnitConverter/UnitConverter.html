@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch.com</title>
+    <link rel="stylesheet" href="UnitConverter.css">
+</head>
+
+<body>
+    <div class="heading">
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/qvzrpodt.json"
+    trigger="loop"
+    delay="500"
+    colors="primary:#121331,secondary:#5970bd"
+    style="width:100px;height:100px">
+</lord-icon>
+        Unit Converter
+    </div>
+
+    <div class="outcontainer">
+        <div class="head">1. Length based conversions</div>
+        <div class="container">
+            <div class="fromunit">
+                <input type="text" id="From" class="unit" placeholder="Enter value here" onclick="highlight()">
+                <select name="units" id="selectFromUnit" class="selecttag" onclick="highlight()">
+                    <option value="km" selected>km</option>
+                    <option value="m">m</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                    <option value="dm">dm</option>
+                    <option value="ft">ft</option>
+                    <option value="in">in</option>
+                    <option value="yd">yd</option>
+                    <option value="mi">mi</option>
+                </select>
+            </div>
+            <button class="btn" id="buttonhighlight" onclick="calculate()">Convert ⇒</button>
+            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+            <div class="tounit">
+                <input type="text" id="outputscreen" class="unit" disabled>
+                <select name="unitto" id="selectToUnit" class="selecttag" onclick="highlight()">
+                    <option value="km" selected>km</option>
+                    <option value="m">m</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                    <option value="dm">dm</option>
+                    <option value="ft">ft</option>
+                    <option value="in">in</option>
+                    <option value="yd">yd</option>
+                    <option value="mi">mi</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="outcontainer">
+        <div class="head">2. Weight based conversions</div>
+        <div class="container">
+            <div class="fromunit">
+                <input type="text" id="Fromw" class="unit" placeholder="Enter value here" onclick="highlightw()">
+                <select name="units" id="selectFromUnitw" class="selecttag" onclick="highlightw()">
+                    <option value="kg" selected>kg</option>
+                    <option value="g">g</option>
+                    <option value="mg">mg</option>
+                </select>
+            </div>
+            <button class="btn" id="buttonhighlightw" onclick="calculatew()">Convert ⇒</button>
+            <div class="tounit">
+                <input type="text" id="outputscreenw" class="unit" disabled>
+                <select name="unitto" id="selectToUnitw" class="selecttag" onclick="highlightw()">
+                    <option value="kg">kg</option>
+                    <option value="g">g</option>
+                    <option value="mg">mg</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./UnitConverter.js"></script>
+</body>
+
+</html>

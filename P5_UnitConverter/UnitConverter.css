@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #F1F9FC; */
+    background: url('./Images/background2.png');
+    background-size: 100%;
+    flex-direction: column;
+    background-blend-mode: color;
+    background-color: #f1f9fcc9;
+}
+.heading{
+    font-size: 3rem;
+    font-family: Sansation;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: #2b3c72;
+    text-align: left;
+    width: 93%;
+}
+.container{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90px;
+    width: 100%;
+    background-color: #a8cde038;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    border: solid 1px #5970bd;
+}
+.outcontainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    font-size: 1.5rem;
+    font-family: Product Sans;
+    font-weight: bold;
+    text-align: left;
+    width: 103%;
+    color: #33498f;
+    margin-bottom: 10px;
+}
+.fromunit{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tounit{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.unit{
+    border: solid 1px #88a0ad;
+    width: 400px;
+    height: 40px;
+    padding: 10px 12px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    background-color: #F1F9FC;
+    font-family: Poppins;
+    color: rgb(88, 100, 105);
+}
+.unit:focus{
+    outline: none;
+}
+.btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #2b3c72;
+    font-size: 1.2rem;
+    color: #d5f8d1;
+    text-transform: uppercase;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background-color: #33498f;
+}
+.selecttag{
+    height: 60px;
+    width: 90px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-family: Poppins;
+    padding: 0px 10px;
+    background-color: #b5e4f5;
+    font-weight: 600;
+    color: #314957;
+    position: absolute;
+    margin-left: 335px;
+    border-right: solid 1px grey;
+}
+.selecttag:focus{
+    outline: none;  
+}

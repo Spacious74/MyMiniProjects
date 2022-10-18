@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomNamePlates.com</title>
+    <link rel="stylesheet" href="NamePlate.css">
+</head>
+
+<body>
+    <div class="container">
+        <label for="text">Enter your name</label> <br>
+        <input type="text" id="text">
+        <div class="color">
+            <label for="text">Color your name plate</label> <br>
+            <input type="color" id="colorplate">
+        </div>
+        <button onclick="takevalue()">Create Your Name Plate</button>
+    </div>
+    <div class="nameplate">
+        <div class="preview" id="addbtn">
+
+        </div>
+    </div>
+    <div class="info">
+        <button onclick="clearNamePlate()" class="clearbtn">Clear</button>
+        <div class="priceofname">
+            <div class="ptxt">Price of Name Plate (₹10/Letter) ⇒</div> <input type="text" id="price" disabled>
+        </div>
+    </div>
+    <script src="./NamePlate.js"></script>
+</body>
+
+</html>

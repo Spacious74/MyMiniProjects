@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+::-webkit-scrollbar{
+    background-color: rgb(230, 230, 230);
+    box-shadow: inset 0px 0px 5px rgb(44, 44, 44);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(61, 61, 61);
+    border-radius: 50px;
+    border: solid 3px white;
+    box-shadow: 0px 0px 5px black;
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(212, 232, 235);
+    overflow-y: hidden;
+    /* overflow-x: scroll; */
+    padding: 10px;
+}
+.container{
+    background-color: rgb(156, 182, 211);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 200px; */
+}
+label{
+    font-size: 1.4rem;
+    font-family: Sansation;
+    font-weight: bold;
+    color: rgb(0, 38, 82);
+    margin-right: 20px;
+}
+
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px 10px 0px;
+}
+#colorplate{
+    padding: 2px;
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+}
+#text{
+    width: 400px;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.26);
+}
+#text:focus{
+    outline: none;
+}
+button{
+    border: none;
+    background-color: #3785c4;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: Poppins;
+    margin-top: 15px;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgb(0, 38, 82);
+    color: rgb(205, 222, 241);
+    letter-spacing: 3px;
+}
+button:hover{
+    background-color: #2373b4;
+}
+button:active{
+    transform: translateY(1.5px);
+    box-shadow: none;
+}
+.clearbtn{
+    width: 180px;
+    margin-top: 0px;
+}
+.nameplate{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 14px;
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.26);
+    transition: all 0.5s ease;
+    background: url('./Images/wall1.jpg');
+    background-size: 100%;
+}
+span{
+    padding: 30px;
+    font-family: 'Poppins';
+    background-color: rgb(231, 204, 172);
+    font-size: 2.5rem;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 1px rgb(62, 69, 87),
+    10px 10px 15px #0000005d;
+    border-radius: 6px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #000000;
+    margin: 10px;
+    color: rgb(61, 61, 61);
+}
+.preview{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info .priceofname{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(156, 182, 211);
+
+}
+.priceofname .ptxt{
+    font-family: Sansation;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: rgb(0, 38, 82);
+}
+#price{
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins;   
+    background-color: white;
+}
