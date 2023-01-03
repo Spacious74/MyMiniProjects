@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: bolder;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c5cacc;
+}
+
+.clock{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 15px #252525;
+    padding: 20px;
+    box-shadow: 10px 10px 40px #00000075,
+    5px 5px 10px #000000a8;
+    margin-top: 20px;
+}
+
+.clockContainer{
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+.clockNumberContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+}
+.ele{
+    width: 47%;
+    margin-bottom: 75px;
+    margin-top: -10px;
+}
+.ten{
+    margin-top: -60px;
+    margin-bottom: 70px;
+    width: 80%;
+}
+.nine{
+    width: 93%;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.eight {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 87%;
+}
+.seven{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    width: 50%;
+}
+
+.center{
+    position: absolute;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: black;
+    z-index: 10;
+}
+
+.hrhand{
+    width: 320px;
+    height: 20px;
+    /* background-color: #0000009c; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    transform: rotate(-90deg);
+}
+.hrhand .hand{
+    width: 190px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.minhand{
+    width: 380px;
+    height: 20px;
+    /* background-color: #0000009c; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    transform: rotate(-90deg);
+}
+.minhand .hand{
+    width: 230px;
+    height: 10px;
+    background-color: #636363;
+    border-radius: 20px;
+}
+
+.sechand{
+    width: 380px;
+    height: 10px;
+    /* background-color: #0000009c; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    transform: rotate(-90deg);
+}
+.sechand .hand{
+    width: 230px;
+    height: 5px;
+    background-color: #ff6600;
+    border-radius: 20px;
+}
+
+.linecontainer{
+    position: absolute;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linecontainer .line{
+    width: 700px;
+    height: 5px;
+    background-color: #363636;
+    position: absolute;
+}
+
+#realtime{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}

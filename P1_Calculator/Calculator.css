@@ -35,7 +35,7 @@ body{
     margin-top: 15px;
 }
 .btn{
-    background-color:rgb(241, 241, 241);
+    background-color:#f1f1f1;
     width: 60px;
     height: 60px;
     display: flex;
@@ -47,7 +47,7 @@ body{
     border: none;
 }
 .outputscreen{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     height: 100px;
     display: flex;
     align-items: flex-end;
@@ -56,15 +56,15 @@ body{
     border-radius: 10px;
     font-size: 1.8rem;
     border: none;
-    box-shadow: 0px 2px 2px rgb(141, 170, 204);
-    color: rgb(53, 66, 102);
+    box-shadow: 0px 2px 2px #8daacc;
+    color: #354266;
     text-align:right;
     outline: none;
 }
 .clear{
-    background-color: rgb(241, 211, 211);
+    background-color: #f1d3d3;
     border: none;
-    box-shadow: 0px 2px 2px rgb(192, 161, 161);
+    box-shadow: 0px 2px 2px #c0a1a1;
     border-radius: 8px;
     margin-top: 15px;
     font-size: 1.3rem;
@@ -76,7 +76,7 @@ body{
     width: 47%;
 }
 .clear:hover{
-    background-color: rgb(238, 178, 178);
+    background-color: #eeb2b2;
 }
 .clear:active{
     box-shadow: none;
@@ -92,25 +92,25 @@ body{
     letter-spacing: 3px;
     font-weight: bold;
     width: 47%;
-    background-color: rgb(189, 193, 216);
+    background-color: #bdc1d8;
     color: rgb(33, 34, 46);
-    box-shadow: 0px 2px 2px rgb(161, 163, 192);
+    box-shadow: 0px 2px 2px #a1a3c0;
 }
 .delete:hover{
-    background-color: rgb(162, 168, 202);
+    background-color: #a2a8ca;
 }
 .delete:active{
     box-shadow: none;
     transform: translateY(0.5px);
 }
 .no{
-    background-color: rgb(210, 190, 233);
-    box-shadow: 0px 2px 2px rgba(95, 0, 95, 0.308);
-    color: rgb(84, 1, 95);
+    background-color: #d2bee9;
+    box-shadow: 0px 2px 2px #5f005f4f;
+    color: #54015f;
     font-weight: bold;
 }
 .no:hover{
-    background-color: rgb(178, 149, 212);
+    background-color: #b295d4;
 }
 .no:active{
     transform: translateY(0.3px);
@@ -118,23 +118,23 @@ body{
 }
 .sign{
     background-color: rgb(177, 209, 177);
-    box-shadow: 0px 2px 2px rgba(1, 95, 14, 0.411);
-    color: rgb(6, 78, 6);
+    box-shadow: 0px 2px 2px #015f0e69;
+    color: #064e06;
 }
 .sign:hover{
-    background-color: rgb(131, 173, 131);
+    background-color: #83ad83;
 }
 .sign:active{
     transform: translateY(0.3px);
     box-shadow: none;
 }
 .equal{
-    background-color: rgb(141, 170, 204);
-    box-shadow: 0px 2px 2px rgb(118, 153, 192);
-    color: rgb(0, 0, 77);
+    background-color: #8daacc;
+    box-shadow: 0px 2px 2px #7699c0;
+    color: #00004d;
 }
 .equal:hover{
-    background-color: rgb(108, 139, 175);
+    background-color: #6c8baf;
 }
 
 .buttons{
