@@ -34,7 +34,7 @@ function startTime() {
     const today = new Date();
     let h = today.getHours();
     let m = today.getMinutes();
-    let s = today.getSeconds() - 1;
+    let s = today.getSeconds()-1;
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('realtime').innerHTML = "Current time : " + h + ":" + m + ":" + s;
